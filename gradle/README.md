@@ -18,10 +18,11 @@ WARNING:
 
 -	[`6.0.0-jdk8`, `6.0-jdk8`, `jdk8`, `6.0.0-jdk`, `6.0-jdk`, `jdk`, `6.0.0`, `6.0`, `latest`](https://github.com/keeganwitt/docker-gradle/blob/e886bd1f3e693b1723a740ba44aa1d23714c8569/jdk8/Dockerfile)
 -	[`6.0.0-jre8`, `6.0-jre8`, `jre8`, `6.0.0-jre`, `6.0-jre`, `jre`](https://github.com/keeganwitt/docker-gradle/blob/e886bd1f3e693b1723a740ba44aa1d23714c8569/jre8/Dockerfile)
--	[`6.0.0-jdk11`, `6.0-jdk11`, `jdk11`](https://github.com/keeganwitt/docker-gradle/blob/e886bd1f3e693b1723a740ba44aa1d23714c8569/jdk11/Dockerfile)
 -	[`6.0.0-jre11`, `6.0-jre11`, `jre11`](https://github.com/keeganwitt/docker-gradle/blob/e886bd1f3e693b1723a740ba44aa1d23714c8569/jre11/Dockerfile)
 -	[`6.0.0-jdk13`, `6.0-jdk13`, `jdk13`](https://github.com/keeganwitt/docker-gradle/blob/e886bd1f3e693b1723a740ba44aa1d23714c8569/jdk13/Dockerfile)
 -	[`6.0.0-jre13`, `6.0-jre13`, `jre13`](https://github.com/keeganwitt/docker-gradle/blob/e886bd1f3e693b1723a740ba44aa1d23714c8569/jre13/Dockerfile)
+
+[![s390x/gradle build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/s390x/job/gradle.svg?label=s390x/gradle%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/s390x/job/gradle/)
 
 # Quick reference
 
@@ -60,7 +61,7 @@ WARNING:
 
 Run this from the directory of the Gradle project you want to build.
 
-`docker run --rm -u gradle -v "$PWD":/home/gradle/project -w /home/gradle/project gradle gradle <gradle-task>`
+`docker run --rm -u gradle -v "$PWD":/home/gradle/project -w /home/gradle/project s390x/gradle gradle <gradle-task>`
 
 Note the above command runs using uid/gid 1000 (user *gradle*) to avoid running as root.
 
