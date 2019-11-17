@@ -16,9 +16,10 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`p9`, `latest`](https://github.com/alt-cloud/docker-brew-alt/blob/e97e14b9ddc54efc0d8a2bee5af76d0ff7d90832/x86_64/Dockerfile)
--	[`p8`](https://github.com/alt-cloud/docker-brew-alt/blob/43865172eb9a97efa718af9cd5b5246db1657066/x86_64/Dockerfile)
--	[`sisyphus`](https://github.com/alt-cloud/docker-brew-alt/blob/06eb14171b57bbf157d646e2c4bef1f6f6d95187/x86_64/Dockerfile)
+-	[`p9`, `latest`](https://github.com/alt-cloud/docker-brew-alt/blob/e97e14b9ddc54efc0d8a2bee5af76d0ff7d90832/aarch64/Dockerfile)
+-	[`sisyphus`](https://github.com/alt-cloud/docker-brew-alt/blob/06eb14171b57bbf157d646e2c4bef1f6f6d95187/aarch64/Dockerfile)
+
+[![arm64v8/alt build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/arm64v8/job/alt.svg?label=arm64v8/alt%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/arm64v8/job/alt/)
 
 # Quick reference
 
@@ -69,7 +70,7 @@ As said above, Sisyphus is a frequently updated repository mainly designed for d
 
 # About this image
 
-The `alt:latest` tag will always point the latest stable release (which is, at the time of this writing, `alt:p9`).
+The `arm64v8/alt:latest` tag will always point the latest stable release (which is, at the time of this writing, `arm64v8/alt:p9`).
 
 ## How It's Made
 
